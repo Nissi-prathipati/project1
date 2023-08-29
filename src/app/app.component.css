@@ -1,0 +1,12 @@
+button{
+    display: inline;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black;
+    border: 0cap;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: right;
+    margin-top: 20px;
+}

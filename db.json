@@ -1,0 +1,129 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "item": [
+    {
+      "id": 1,
+      "name": "sugar",
+      "image": "https://th.bing.com/th/id/OIP.iDXHy_tFpcc4Scz5MQiwPgHaE8?w=251&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 48
+    },
+    {
+      "id": 2,
+      "name": "Chocolates",
+      "image": "https://th.bing.com/th/id/OIP.qdgyQG7v8pO9CS7eMT0T9QHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "Hersheys choco spread",
+      "image": "https://th.bing.com/th/id/OIP.ZTitPDcdihgTbm84SIH6WAHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 250
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Hide-Seek",
+      "image": "https://th.bing.com/th/id/OIP.iDXHy_tFpcc4Scz5MQiwPgHaE8?w=251&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 48
+    },
+    {
+      "id": 2,
+      "name": "Chocolates",
+      "image": "https://th.bing.com/th/id/OIP.qdgyQG7v8pO9CS7eMT0T9QHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 100
+    },
+    {
+      "id": 3,
+      "name": "Hersheys choco spread",
+      "image": "https://th.bing.com/th/id/OIP.ZTitPDcdihgTbm84SIH6WAHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 250
+    },
+    {
+      "id": 4,
+      "name": "wheat flour",
+      "image": "https://th.bing.com/th/id/OIP.0FDRTzVALibzSYJ2l1_f2QHaE9?w=263&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 370
+    },
+    {
+      "id": 5,
+      "name": "oil",
+      "image": "https://th.bing.com/th/id/OIP.kJhTKt9n48mMmSw0Fg5mxAHaFj?w=253&h=190&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 270
+    }
+  ],
+  "contact": [
+    {
+      "name": "Nissi",
+      "email": "nissi2937@gmail.com",
+      "phonenumber": 7815977389,
+      "comment": "Hello"
+    }
+  ],
+  "cart": [
+    {
+      "id": 3,
+      "name": "Hersheys choco spread",
+      "image": "https://th.bing.com/th/id/OIP.ZTitPDcdihgTbm84SIH6WAHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "price": 250
+    }
+  ],
+  "signupUser": [
+    {
+      "name": "nissi",
+      "mobile": 7815977389,
+      "email": "nissi@gmail.com",
+      "password": "nissi123",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "name": "pavani",
+      "mobile": 879994026,
+      "email": "pavs@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "Navya",
+      "mobile": 123456789,
+      "email": "navya@gmail.com",
+      "password": "navya",
+      "id": 3
+    },
+    {
+      "name": "havi",
+      "mobile": 987654321,
+      "email": "havi@gmail.com",
+      "password": "havi",
+      "id": 4
+    },
+    {
+      "name": "Anjali",
+      "mobile": 9871234567,
+      "email": "Anjali@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Sonali",
+      "mobile": 345678921,
+      "email": "sonali@gmail.com",
+      "password": "123",
+      "id": 6
+    }
+  ]
+}

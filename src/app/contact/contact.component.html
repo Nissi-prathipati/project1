@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="text-center">
+                <div class="absolute">
+                  <h3>Sign Up</h3>
+              <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Name</label>
+                        <br>
+                          <input formControlName="name" type="text" class="form-control" id="exampleInputPassword1">
+                          <span class="text-primary" *ngIf="signupForm.controls['name'].dirty&&signupForm.hasError('required','name')">Name is required</span>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Mobile</label>
+                          <br>
+                          <input formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <br>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <span class="text-info" *ngIf="signupForm.controls['email'].dirty&&signupForm.hasError('required','email')">Email is required</span>
+                        <div id="emailHelp" class="form-text"></div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <br>
+                        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" >
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-info">Sign Up</button>
+                      <br>
+              </form>
+              <br>
+              <a style="color:rgb(0, 3, 6);margin-top:10px" routerLink="/Login">Already User? Go to Login</a>
+          </div>
+        </div>
+</div>
+</div>
+</div>
+</div>

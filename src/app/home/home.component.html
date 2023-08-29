@@ -1,0 +1,48 @@
+
+<form style="margin: auto; width: 900px;">
+
+    <div class="container">
+
+        <h2>Product Details</h2>
+
+        <table class="table table-sm table-bordered m-t-2">
+
+          <tr>
+
+            <th>Id</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Add to Cart</th>
+
+          </tr>
+
+          <tr *ngFor="let user of jsonData">
+
+            <td>{{user.id}}</td>
+
+            <td>{{user.name}}</td>
+
+            <td><img src={{user.image}} alt="Image" height="100px" widht="100px" ></td>
+
+            <td>{{user.price}}</td>
+
+            <td>
+
+              <!-- <button (click)="onEdit(row)" style="background-color: rgb(14, 9, 9); color: white;font-weight: bold;;" type="button" data-bs-toggle="model" data-bs-target="#exampleModal" class="btn btn-info">Edit</button> -->
+
+              <button (click)="addCart(user)" style="background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Add</button>
+
+              <!-- <button (click)="get_Item(user.id)" style="background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Details</button> -->
+
+              <!-- <button (click)="delete_Item(user.id)">Delete</button> -->
+
+          </td>
+
+          </tr>
+
+        </table>
+
+      </div>
+
+    </form>

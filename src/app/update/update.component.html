@@ -1,0 +1,38 @@
+<div>
+<h2 style="text-align:center;">Update Item </h2>
+    <form style="margin-left:35%; width: 220px;" #updateForm="ngForm" (ngSubmit)="onSubmit(updateForm)">
+        <p style="margin-top: 10px; padding-top: 40px;">
+        <label for="item" style="font-size: 25px; color: rgb(5, 4, 4);">Name</label><br>
+
+ 
+
+        <input type="text" id="item" name="item" [(ngModel)]="item" required style="border-radius: 10px; width: 400px; height: 30px;"><br><br>
+
+ 
+
+        <input type="number" id="id" name="id" [(ngModel)] = "id" required hidden style="border-radius: 10px; width: 400px; height: 30px;">
+
+ 
+
+        <input type="text" id="image" name="image" [(ngModel)] = "image" required hidden style="border-radius: 10px; width: 400px; height: 30px;">
+
+ 
+
+        <label for="item" style="font-size: 25px;color: rgb(10, 9, 9);">Price</label><br>
+
+ 
+
+        <input type="number" id="item" name="price" [(ngModel)]="price" required style="border-radius: 10px;border-width: 2px;width: 400px; height: 30px;"><br><br>
+
+ 
+
+        <button type="submit" style="margin-left: 40%; cursor: pointer;height:40px; width: 100px;border-radius: 10px; background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Submit</button><br><br><br>
+
+ 
+
+ 
+
+ 
+
+    </form>
+  </div>

@@ -1,0 +1,85 @@
+<form style="margin: auto; width: 600px;">
+
+    <div class="container">
+
+        <h2>Product Details</h2>
+
+        <table class="table table-sm table-bordered m-t-2">
+
+          <tr>
+
+            <th>Id</th>
+
+            <th>Name</th>
+
+            <th>Image</th>
+
+            <th>Price</th>
+
+            <th>Delete</th>
+
+            <th>Update</th>
+
+          </tr>
+
+          <tr *ngFor="let user of jsonData">
+
+            <td>{{user.id}}</td>
+
+            <td>{{user.name}}</td>
+
+            <td><img src={{user.image}} alt="Image" height="100px" widht="100px" ></td>
+ 
+            <td>{{user.price}}</td>
+
+            <td>
+
+              
+
+              <button (click)="delete_Item(user.id)" style="background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Delete</button>
+
+              <button (click)="get_Item(user.id)" style="background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Details</button>
+
+              <!-- <button (click)="delete_Item(user.id)">Delete</button> -->
+
+          </td>
+          <td>
+            <button (click)="edit_Item(user.id)" style="background-color: rgb(14, 9, 9); color: white;font-weight: bold;">update</button> 
+          </td>
+
+          </tr>
+
+        </table>
+
+      </div>
+
+      <button type="submit" style="margin-left: 40%; cursor: pointer;height:40px; width: 100px;border-radius: 10px; background-color: rgb(14, 9, 9); color: white;font-weight: bold;">Create</button><br><br><br>
+
+    </form>
+
+ 
+
+<div *ngIf="selectedProduct">
+
+    <h3>Selected Product:</h3>
+
+    <div>
+
+      Id: {{ selectedProduct.id }}<br>
+
+      Name: {{ selectedProduct.name }}<br>
+
+      Price: {{ selectedProduct.price }}<br>
+      <hr>
+
+ 
+
+      <!-- <button (click)="edit_Item(selectedProduct)"style="margin-left: 20px;">Update</button>
+
+ 
+
+      <button (click)="delete_Item(selectedProduct.id)" style="margin-left: 20px;">Delete</button>  -->
+
+    </div>
+
+</div>
